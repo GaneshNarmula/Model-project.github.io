@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(furniture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.model{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.banner{
+    background-color: aliceblue;
+    width: 500px;
+    height: 200px;
+    padding: 50px;
+}
+
+.model .banner h1{
+    padding: 0px 70px;
+    font-size: 40px;
+    color: rgb(83, 113, 210);
+}
+
+.model .banner button{
+    margin-top: 30px;
+    margin-left: 150px;
+    border-radius: 9px;
+    padding: 8px;
+    background-color: aqua;
+}
+
+.model-overlay{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+    width: 500px;
+    height: 200px;
+    visibility: hidden;
+    z-index: -10;
+}
+
+.model-overlay h1{
+    padding: 0px 90px;
+    font-size: 40px;
+    color: blueviolet;
+}
+
+.model-overlay button{
+    position: absolute;
+    top: 40px;
+    left: 520px;
+    padding: 8px;
+}
+
+.newmodel{
+    visibility: visible;
+    z-index: 10;
+}
